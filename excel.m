@@ -1,21 +1,8 @@
-%%\ risultati_Cutlit.m
-% Simula il modello Cutlit (job shop as-is) e scrive i risultati in Excel.
-%
-% COME SI USA
-%   1. Mettete questo file nella STESSA cartella del modello .slx
-%   2. Salvate il modello (lo script usa la versione salvata su disco)
-%   3. Controllate le impostazioni qui sotto (nome del modello, numero di repliche)
-%   4. Premete Run: alla fine trovate il file Excel nella stessa cartella
-%
-% Lo script NON modifica il vostro modello: lavora su una copia temporanea,
-% a cui collega da solo i blocchi To Workspace sulle statistiche già attive
-% (utilization dei server, d del generatore, n delle code).
-
 clear; clc;
 
 %%\ ---------------- IMPOSTAZIONI ----------------
-mdl = 'ProgettoIT'              % numero di repliche (es. 5 per il report) %[output:0d623131]
-fileOut ='risultati_Cutlit.xlsx';   % file Excel di output
+mdl = 'ProgettoIT_2_3_1d'              % numero di repliche (es. 5 per il report) %[output:0d623131]
+fileOut ='risultati_Cutlit_2_3_1d.xlsx';   % file Excel di output
 nRep = 5;
 % Saturazioni dell'analisi a valori medi (Excel punto 1)
 satExcel = struct('Printing',0.818, 'Punch',0.895, 'Linear',0.122, ...
